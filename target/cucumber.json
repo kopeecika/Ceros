@@ -1,0 +1,1051 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-03T19:52:57.945Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2535016600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Ensure you can sort the inventory by name, Z-to-A, and the sorting is correct.(Descending)",
+        "description": "",
+        "id": "bonus;ensure-you-can-sort-the-inventory-by-name--z-to-a--and-the-sorting-is-correct.(descending)",
+        "after": [
+          {
+            "result": {
+              "duration": 784944100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 588183600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"Login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_is_on_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 642180200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131546300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the \"Inventory\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 470764300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user looks at the list of \"items\" on the \"Inventory\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"items\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.Bonus.user_looks_at_the_list_of_on_the_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 822812700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "sort items in descending \"A_to_Z\" order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A_to_Z\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.Bonus.sort_items_in_descending_order(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@bonus"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-03T19:53:03.933Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1904273900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify you can sort the inventory items by price, high-to-low, and the sorting is correct",
+        "description": "",
+        "id": "bonus;verify-you-can-sort-the-inventory-items-by-price--high-to-low--and-the-sorting-is-correct",
+        "after": [
+          {
+            "result": {
+              "duration": 1126064400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1450091400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is on \"Login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_is_on_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1300957500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user login as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 482520400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the \"Inventory\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 312355900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user looks at the list of \"prices\" on the \"Inventory\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prices\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.Bonus.user_looks_at_the_list_of_on_the_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 513082000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "sort items in descending \"high_to_low\" order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"high_to_low\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.Bonus.sort_items_in_descending_order(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@bonus"
+          }
+        ]
+      }
+    ],
+    "name": "Bonus",
+    "description": "",
+    "id": "bonus",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Bonus.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-03T19:52:57.945Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2692243300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Add product to the card",
+        "description": "",
+        "id": "card-functionality;add-product-to-the-card",
+        "after": [
+          {
+            "result": {
+              "duration": 1102260600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 604080500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"Login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_is_on_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 805353400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 163192800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the \"Inventory\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 113736900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user adds the \"product\" to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"product\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.user_adds_the_to_the_card(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119628100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to \"Cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cart\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64932800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the \"Cart\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cart\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 70163600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"chart items\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chart items\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.should_be_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@Card"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-03T19:53:03.692Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1734871900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify that by default inventory page lists 6 items",
+        "description": "",
+        "id": "card-functionality;verify-that-by-default-inventory-page-lists-6-items",
+        "after": [
+          {
+            "result": {
+              "duration": 1855334800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1049508200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is on \"Login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_is_on_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1020990900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user login as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 407486400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the \"Inventory\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 371355700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify \"Inventory\" page lists 6 items",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 7
+                },
+                {
+                  "val": "6",
+                  "offset": 30
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.verify_page_lists_items(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@inventory"
+          }
+        ]
+      }
+    ],
+    "name": "Card functionality",
+    "description": "",
+    "id": "card-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Card.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 690992300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"Login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_is_on_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 635508000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52999600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the \"Inventory\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-03T19:52:57.945Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2693241200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Verify user can complete the purchase/checkout process",
+        "description": "",
+        "id": "checkout-functionality;verify-user-can-complete-the-purchase/checkout-process;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 811398800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 249906200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user adds the \"product\" to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"product\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.user_adds_the_to_the_card(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 146117300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user navigates to \"Cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cart\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43161100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the \"Cart\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cart\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 119370100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user navigates to \"Checkout\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checkout\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26644100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the \"Checkout\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checkout\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 698455500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enter \"Olga\" and \"Copeichina\" and \"20165\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Olga\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Copeichina\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"20165\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.user_enter_and_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114384600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click on \"Continue\" button on \"Checkout\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Continue\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Checkout\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.user_click_on_button_on_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20911900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the \"Checkout-step-two\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checkout-step-two\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62108300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on \"Finish\" button on \"Checkout-step-two\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Finish\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Checkout-step-two\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.CardFunctionality.user_click_on_button_on_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18236500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the \"Checkout-complete\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checkout-complete\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Checkout functionality",
+    "description": "",
+    "id": "checkout-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CkeckOut.feature",
+    "tags": [
+      {
+        "name": "@checkout",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 11
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-03T19:53:04.351Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2260028900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "login-functionality;",
+        "after": [
+          {
+            "result": {
+              "duration": 1335556400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.SwagLabs.stepDefenitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 681671700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"Login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_is_on_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1051737700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 360239200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the \"Inventory\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

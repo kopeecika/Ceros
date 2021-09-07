@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>03 Sep 2021, 15:53</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.Bonus.sort_items_in_descending_order(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="667947350">0.667</td>
+              <td class="duration" data-value="667947350">0.822</td>
+              <td class="duration" data-value="1335894700">1.335</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.Bonus.user_looks_at_the_list_of_on_the_page(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="391560100">0.391</td>
+              <td class="duration" data-value="391560100">0.470</td>
+              <td class="duration" data-value="783120200">0.783</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.CardFunctionality.should_be_displayed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="70163600">0.070</td>
+              <td class="duration" data-value="70163600">0.070</td>
+              <td class="duration" data-value="70163600">0.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.CardFunctionality.user_adds_the_to_the_card(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="181821550">0.181</td>
+              <td class="duration" data-value="181821550">0.249</td>
+              <td class="duration" data-value="363643100">0.363</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.CardFunctionality.user_click_on_button_on_page(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="88246450">0.088</td>
+              <td class="duration" data-value="88246450">0.114</td>
+              <td class="duration" data-value="176492900">0.176</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.CardFunctionality.user_enter_and_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="698455500">0.698</td>
+              <td class="duration" data-value="698455500">0.698</td>
+              <td class="duration" data-value="698455500">0.698</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.CardFunctionality.user_navigates_to_page(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="128371833">0.128</td>
+              <td class="duration" data-value="128371833">0.146</td>
+              <td class="duration" data-value="385115500">0.385</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.CardFunctionality.verify_page_lists_items(java.lang.String,java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="371355700">0.371</td>
+              <td class="duration" data-value="371355700">0.371</td>
+              <td class="duration" data-value="371355700">0.371</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.Hooks.setUp()</td>
+              <td>6</td>
+              <td class="duration" data-value="2303279300">2.303</td>
+              <td class="duration" data-value="2303279300">2.693</td>
+              <td class="duration" data-value="13819675800">13.819</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>6</td>
+              <td class="duration" data-value="1169259850">1.169</td>
+              <td class="duration" data-value="1169259850">1.855</td>
+              <td class="duration" data-value="7015559100">7.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.LoginFunctionality.the_page_should_be_displayed(java.lang.String)</td>
+              <td>11</td>
+              <td class="duration" data-value="161079190">0.161</td>
+              <td class="duration" data-value="161079190">0.482</td>
+              <td class="duration" data-value="1771871100">1.771</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.LoginFunctionality.user_is_on_page(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="844087950">0.844</td>
+              <td class="duration" data-value="844087950">1.450</td>
+              <td class="duration" data-value="5064527700">5.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.SwagLabs.stepDefenitions.LoginFunctionality.user_login_as(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="909454616">0.909</td>
+              <td class="duration" data-value="909454616">1.300</td>
+              <td class="duration" data-value="5456727700">5.456</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>13</td>
+            <td>49</td>
+            <td class="duration">0.761</td>
+            <td class="duration">13.819</td>
+            <td class="duration">37.312</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
